@@ -1,4 +1,4 @@
-$(function () {
+$(function() {
 
     var $gifArea = $("#gif-area");
     var $searchInput = $("#search");
@@ -8,7 +8,7 @@ $(function () {
         var searchTerm = $searchInput.val();
         $searchInput.val("");
         $.get(
-            "http://api.giphy.com/v1/gifs/search",
+            "https://api.giphy.com/v1/gifs/search",
             {
                 q: searchTerm,
                 api_key: "CFrU1N4Z4zxXoXTYi1zpp1xfzQRJjDJI"
